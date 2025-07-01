@@ -1,0 +1,123 @@
+#app {
+      min-height: 100vh;
+      background-color: white;
+      font-family: sans-serif;
+    }
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #navbar .brand {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #7e22ce;
+    }
+    #navbar nav a {
+      margin-left: 1.5rem;
+      color: #374151;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    #navbar nav a:hover {
+      color: #7e22ce;
+    }
+    #navbar .email-btn {
+      background-color: #f97316;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      border: none;
+      cursor: pointer;
+    }
+    #navbar .email-btn:hover {
+      background-color: #ea580c;
+    }
+    #hero {
+      text-align: center;
+      padding: 6rem 1rem;
+      background: linear-gradient(to right, #1e1b4b, #6b21a8);
+      color: white;
+      position: relative;
+    }
+    #hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    #hero .highlight {
+      color: #facc15;
+    }
+    #hero p {
+      max-width: 40rem;
+      margin: 0 auto 1.5rem;
+    }
+    #hero button {
+      background-color: white;
+      color: #6b21a8;
+      padding: 0.5rem 1.5rem;
+      font-weight: 600;
+      border-radius: 9999px;
+      border: none;
+      cursor: pointer;
+    }
+    #hero button:hover {
+      background-color: #f3f4f6;
+    }
+    #info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+    @media (min-width: 768px) {
+      #info {
+        flex-direction: row;
+        align-items: center;
+      }
+      #info .left, #info .right {
+        width: 50%;
+      }
+    }
+    #info .tag {
+      display: inline-block;
+      background-color: #ef4444;
+      color: white;
+      font-size: 0.875rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 0.5rem;
+    }
+    #info h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    #info .orange {
+      color: #f97316;
+    }
+    #info p {
+      color: #4b5563;
+    }
+    #info img {
+      width: 100%;
+      max-width: 24rem;
+      margin: 0 auto;
+    }
+    #cta {
+      text-align: center;
+      margin: 2.5rem 0;
+    }
+    #cta button {
+      background-color: #6b21a8;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      border: none;
+      cursor: pointer;
+    }
+    #cta button:hover {
+      background-color: #581c87;
+    }
