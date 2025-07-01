@@ -1,59 +1,157 @@
 import React from "react";
-// import TelescopeImage from "../assets/telescope-illustration.png"; // left illustration
-// import MountainImage from "../assets/mountain-illustration.png";  // right illustration
 
 export default function VisionSection() {
   return (
-    <section className="relative bg-[#f4edfd] py-20 px-6 lg:px-20 overflow-hidden">
-      
-      {/* Label at the top */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#3f2d87] text-white text-xs font-semibold px-4 py-1 rounded-t-md shadow">
-        The Vision
-      </div>
+    <>
+      <style>
+        {`
+          .vision-section {
+            position: relative;
+            background-color: #f4edfd;
+            padding: 5rem 1.5rem;
+            overflow: hidden;
+          }
 
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-10 relative z-10">
-        
-        {/* Left Image */}
-        <div className="max-w-xs w-full">
-          {/* <img
-            src={TelescopeImage}
-            alt="Telescope Illustration"
-            className="w-full object-contain"
-          /> */}
-        </div>
+          @media (min-width: 1024px) {
+            .vision-section {
+              padding: 5rem;
+            }
+          }
 
-        {/* Center Content */}
-        <div className="text-center max-w-2xl w-full">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            Our Vision Is Not to Own the Future. It’s to Inspire It
-          </h2>
-          <p className="text-gray-700 mb-2">
-            Only deep belief in ideas that matter and experiences that move people.
-          </p>
-          <p className="text-gray-700 mb-6">
-            In a world driven by urgency, we build with intention
-          </p>
+          .vision-label {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #3f2d87;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 1rem;
+            border-top-left-radius: 0.375rem;
+            border-top-right-radius: 0.375rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
 
-          {/* Decorative line */}
-          <div className="border-t-2 border-dotted border-blue-400 w-1/2 mx-auto mb-6 relative">
-            <div className="absolute left-1/2 -top-3 transform -translate-x-1/2 bg-white px-2 text-blue-400 font-bold">✕</div>
+          .vision-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 10;
+          }
+
+          @media (min-width: 1024px) {
+            .vision-container {
+              flex-direction: row;
+            }
+          }
+
+          .vision-image {
+            max-width: 20rem;
+            width: 100%;
+          }
+
+          .vision-content {
+            text-align: center;
+            max-width: 42rem;
+            width: 100%;
+          }
+
+          .vision-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          @media (min-width: 768px) {
+            .vision-title {
+              font-size: 2.25rem;
+            }
+          }
+
+          .vision-text {
+            color: #4b5563; /* gray-700 */
+            margin-bottom: 0.75rem;
+          }
+
+          .vision-divider {
+            border-top: 2px dotted #60a5fa; /* blue-400 */
+            width: 50%;
+            margin: 1.5rem auto;
+            position: relative;
+          }
+
+          .vision-divider-icon {
+            position: absolute;
+            top: -0.75rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 0 0.5rem;
+            color: #60a5fa;
+            font-weight: bold;
+          }
+
+          .vision-button {
+            background-color: #f97316; /* orange-500 */
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+          }
+
+          .vision-button:hover {
+            background-color: #ea580c; /* orange-600 */
+          }
+        `}
+      </style>
+
+      <section className="vision-section">
+        <div className="vision-label">The Vision</div>
+
+        <div className="vision-container">
+          {/* Left Image */}
+          <div className="vision-image">
+            {/* Uncomment if using local images */}
+            {/* <img src={TelescopeImage} alt="Telescope Illustration" className="w-full object-contain" /> */}
           </div>
 
-          {/* CTA Button */}
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-md transition duration-300">
-            Learn More About Us
-          </button>
-        </div>
+          {/* Center Content */}
+          <div className="vision-content">
+            <h2 className="vision-title">
+              Our Vision Is Not to Own the Future. It’s to Inspire It
+            </h2>
+            <p className="vision-text">
+              Only deep belief in ideas that matter and experiences that move
+              people.
+            </p>
+            <p className="vision-text">
+              In a world driven by urgency, we build with intention
+            </p>
 
-        {/* Right Image */}
-        <div className="max-w-xs w-full">
-          {/* <img
-            src={MountainImage}
-            alt="Mountain with Flag"
-            className="w-full object-contain"
-          /> */}
+            {/* Divider Line */}
+            <div className="vision-divider">
+              <div className="vision-divider-icon">✕</div>
+            </div>
+
+            {/* CTA Button */}
+            <button className="vision-button">Learn More About Us</button>
+          </div>
+
+          {/* Right Image */}
+          <div className="vision-image">
+            {/* Uncomment if using local images */}
+            {/* <img src={MountainImage} alt="Mountain Illustration" className="w-full object-contain" /> */}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

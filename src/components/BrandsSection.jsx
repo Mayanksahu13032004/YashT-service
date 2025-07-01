@@ -8,44 +8,140 @@ const cardData = new Array(6).fill({
 
 export default function BrandsSection() {
   return (
-    <section className="bg-[#f2e9ff] py-16 text-center px-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Our Universe of Brands
-      </h2>
-      <p className="text-gray-700 max-w-3xl mx-auto mb-12">
-        We don’t follow trends. We create the conditions for timelessness.
-        Explore the growing constellation of ventures born from our ethos
-      </p>
+    <>
+      {/* Inline Style Tag */}
+      <style>
+        {`
+          #brands-section {
+            background-color: #f2e9ff;
+            padding: 4rem 1rem;
+            text-align: center;
+          }
 
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-10">
-        {cardData.map((card, idx) => (
-          <div
-            key={idx}
-            className={`rounded-xl border ${
-              idx === 1 ? "border-blue-500" : "border-purple-200"
-            } overflow-hidden shadow-md bg-white`}
-          >
-            {/* Header */}
-            <div className="flex items-center justify-center gap-2 py-4">
-              <div className="w-5 h-5 bg-orange-500 rounded-full" />
-              <h3 className="text-lg font-bold text-gray-900">
-                {card.title}
-              </h3>
+          #brands-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1f2937; /* gray-900 */
+            margin-bottom: 1rem;
+          }
+
+          @media (min-width: 768px) {
+            #brands-section h2 {
+              font-size: 2.25rem;
+            }
+          }
+
+          #brands-section p {
+            color: #374151; /* gray-700 */
+            max-width: 768px;
+            margin: 0 auto 3rem;
+          }
+
+          .brands-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 96rem;
+            margin: 0 auto 2.5rem;
+          }
+
+          @media (min-width: 640px) {
+            .brands-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          @media (min-width: 1024px) {
+            .brands-grid {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+
+          .brand-card {
+            border-radius: 0.75rem;
+            border: 1px solid #d8b4fe; /* purple-200 */
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          }
+
+          .brand-card.blue-border {
+            border-color: #3b82f6; /* blue-500 */
+          }
+
+          .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 0;
+          }
+
+          .dot {
+            width: 1.25rem;
+            height: 1.25rem;
+            background-color: #f97316; /* orange-500 */
+            border-radius: 9999px;
+          }
+
+          .card-title {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: #111827; /* gray-900 */
+          }
+
+          .card-body {
+            background-color: #6b21a8; /* purple-700 */
+            color: white;
+            padding: 1.25rem;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            border-bottom-left-radius: 0.75rem;
+            border-bottom-right-radius: 0.75rem;
+          }
+
+          .cta-button {
+            background-color: #f97316; /* orange-500 */
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 1.125rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+
+          .cta-button:hover {
+            background-color: #ea580c; /* orange-600 */
+          }
+        `}
+      </style>
+
+      {/* Section */}
+      <section id="brands-section">
+        <h2>Our Universe of Brands</h2>
+        <p>
+          We don’t follow trends. We create the conditions for timelessness.
+          Explore the growing constellation of ventures born from our ethos
+        </p>
+
+        <div className="brands-grid">
+          {cardData.map((card, idx) => (
+            <div
+              key={idx}
+              className={`brand-card ${idx === 1 ? "blue-border" : ""}`}
+            >
+              <div className="card-header">
+                <div className="dot" />
+                <h3 className="card-title">{card.title}</h3>
+              </div>
+              <div className="card-body">{card.description}</div>
             </div>
+          ))}
+        </div>
 
-            {/* Body */}
-            <div className="bg-purple-700 text-white p-5 text-sm leading-relaxed rounded-b-xl">
-              {card.description}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* CTA Button */}
-      <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full text-lg transition duration-300">
-        Explore All
-      </button>
-    </section>
+        <button className="cta-button">Explore All</button>
+      </section>
+    </>
   );
 }
