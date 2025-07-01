@@ -114,7 +114,13 @@ export default function VisionSection() {
       </style>
 
       <section className="vision-section">
-        <div className="vision-label">The Vision</div>
+     <div
+  className="vision-label"
+  style={{ zIndex: 2147483647 }}
+>
+  The Vision
+</div>
+
 
         <div className="vision-container">
           {/* Left Image */}

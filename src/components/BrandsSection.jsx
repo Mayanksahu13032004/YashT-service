@@ -114,6 +114,7 @@ export default function BrandsSection() {
           .cta-button:hover {
             background-color: #ea580c; /* orange-600 */
           }
+      
         `}
       </style>
 
