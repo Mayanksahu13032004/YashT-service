@@ -1,5 +1,7 @@
 import React from "react";
 
+import gun from "../assets/gun.jpg"
+
 export default function VisionSection() {
   return (
     <>
@@ -137,7 +139,7 @@ export default function VisionSection() {
           {/* Left Image */}
           <div className="vision-image">
             {/* Uncomment if using local images */}
-            {/* <img src={TelescopeImage} alt="Telescope Illustration" className="w-full object-contain" /> */}
+            <img src={gun} alt="Telescope Illustration" className="w-full object-contain" />
           </div>
 
           {/* Center Content */}
