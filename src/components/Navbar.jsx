@@ -20,7 +20,7 @@ function Navbar() {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: '550px', // you can change the height as per your need
+    height: '35rem', // you can change the height as per your need
     width: '100%',
   }}
 >
@@ -30,18 +30,18 @@ function Navbar() {
         <div className="brand">Sample Project</div>
 
       <div className='navi'>
-          <div className="hamburger" onClick={toggleMenu}>
-          {menuOpen ? '✖' : '☰'}
-        </div>
+         <div className="hamburger" onClick={toggleMenu}>
+  {menuOpen ? '✖' : '☰'}
+</div>
 
-        <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Our Brands</a>
-          <a href="#">What We Do</a>
-          <a href="#">Team</a>
-          <a href="#">Careers</a>
-        </nav>
+<nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Our Brands</a>
+  <a href="#">What We Do</a>
+  <a href="#">Team</a>
+  <a href="#">Careers</a>
+</nav>
       </div>
 
       <div></div>
