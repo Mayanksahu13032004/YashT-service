@@ -18,24 +18,28 @@ export default function VisionSection() {
             }
           }
 
-          .vision-label {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #3f2d87;
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 0.25rem 1rem;
-            border-top-left-radius: 0.375rem;
-            border-top-right-radius: 0.375rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          }
+        .vision-label {
+  position: absolute;
+  top: 0; /* Or top: 1rem; if you want spacing */
+  left: 50%;
+  transform: translateX(-50%); /* Only horizontal centering */
+  background-color: #3f2d87;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  
+  padding: 0.25rem 1rem;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2147483647;
+}
+
 
           .vision-container {
             display: flex;
             flex-direction: column;
+            
             gap: 2.5rem;
             align-items: center;
             justify-content: space-between;
@@ -60,18 +64,23 @@ export default function VisionSection() {
             width: 100%;
           }
 
-          .vision-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color:black;
-          }
+        .vision-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #1f2937;
+  line-height: 1.4;
+  white-space: nowrap; /* ✅ This prevents line break */
+}
 
-          @media (min-width: 768px) {
-            .vision-title {
-              font-size: 2.25rem;
-            }
-          }
+
+        @media (max-width: 768px) {
+  .vision-title {
+    white-space: normal;
+    font-size: 1.5rem;
+  }
+}
+
 
           .vision-text {
             color: #4b5563; /* gray-700 */
@@ -99,8 +108,8 @@ export default function VisionSection() {
 
           .vision-button {
             background-color: #f97316; /* orange-500 */
-            color: white;
-            font-weight: 600;
+            color: black;
+            font-weight: 700;
             padding: 0.75rem 1.5rem;
             border-radius: 0.375rem;
             font-size: 1rem;
@@ -152,8 +161,8 @@ export default function VisionSection() {
 
           {/* Right Image */}
           <div className="vision-image">
-            {/* Uncomment if using local images */}
-            {/* <img src={MountainImage} alt="Mountain Illustration" className="w-full object-contain" /> */}
+            {/* Uncomment if using local images */} */
+             {/* <img src={MountainImage} alt="Mountain Illustration" className="w-full object-contain" /> */}
           </div>
         </div>
       </section>

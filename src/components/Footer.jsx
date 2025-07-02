@@ -55,10 +55,13 @@ export default function Footer() {
           }
 
           .footer-logo-circle {
-            width: 1.25rem;
-            height: 1.25rem;
+            width: 1.50rem;
+            height: 1.50rem;
+            font-weight: 600;
+            font-size: 1.125rem;
             border-radius: 9999px;
             background-color: #f97316;
+
           }
 
           .footer-nav {
@@ -68,17 +71,20 @@ export default function Footer() {
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
-            justify-content: center;
-            align-items: center;
+            // justify-content: center;
+            // align-items: center;
             font-size: 0.875rem;
             font-weight: 500;
             color: #f3f4f6;
+            margin-right:-40rem;
+            margin-bottom:4rem;
           }
 
           .footer-nav a {
             color: inherit;
             text-decoration: none;
             transition: color 0.3s ease;
+            
           }
 
           .footer-nav a:hover {
@@ -88,6 +94,8 @@ export default function Footer() {
           .footer-copy {
             font-size: 0.875rem;
             color: #d1d5db;
+            margin-top:2rem;
+            font-weight:bold;
           }
 
           .footer-terms {
@@ -96,11 +104,15 @@ export default function Footer() {
             display: flex;
             gap: 0.75rem;
             align-items: center;
+            margin-top:3rem;
+            
+            font-weight:bold;
           }
 
           .footer-terms a {
             color: inherit;
             text-decoration: none;
+
           }
 
           .footer-terms a:hover {
