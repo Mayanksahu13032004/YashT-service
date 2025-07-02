@@ -135,9 +135,7 @@ export default function VisionSection() {
           width: '100%',
         }}>
      <div
-  className="vision-label"
- 
->
+  className="vision-label">
   The Vision
 </div>
 

@@ -120,6 +120,7 @@ export default function BrandsSection() {
 
       {/* Section */}
       <section id="brands-section">
+        
         <h2>Our Universe of Brands</h2>
         <p>
           We don’t follow trends. We create the conditions for timelessness.
