@@ -7,12 +7,12 @@ import BrandsSection from './components/BrandsSection.jsx'
 import PhilosophySection from './components/PhilosophySection.jsx'
 import VisionSection from './components/VisionSection.jsx'
 import Footer from './components/Footer.jsx'
-import Second from './components/second.jsx'
+import Secondpage from './components/Secondpage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar/>
-      <Second/>
+      <Secondpage/>
      <BrandsSection/>
       <PhilosophySection/>
        <VisionSection/>
