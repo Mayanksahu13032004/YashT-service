@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../style/navbarstyle.css';
 import img1 from '../assets/img1.jpg';
 import img3 from '../assets/img3.jpg';
+import img4 from '../assets/img4.jpg';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,19 @@ function Navbar() {
 
   return (
     <div id="app">
-      <div className='hello'>
+      <div
+  className="hello"
+  style={{
+    backgroundImage: `url(${img4})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    height: '550px', // you can change the height as per your need
+    width: '100%',
+  }}
+>
+  {/* Your content goes here */}
+
       <header id="navbar">
         <div className="brand">Sample Project</div>
 
@@ -31,38 +44,11 @@ function Navbar() {
         </nav>
       </div>
 
-      <div><img className='imgside' src={img3} alt="" /></div>
+      <div></div>
       </header>
- </div>
-      <section id="hero">
-        <h1>
-          Where <span className="highlight">Vision</span> Becomes Venture
-        </h1>
-        <p>
-          Sample Project builds and nurtures independent brands that do more than compete—they connect, inspire, and redefine the emotional and cultural fabric of everyday life.
-        </p>
-        <button>Discover Our Vision</button>
-      </section>
+ 
+</div>
 
-<section id="info">
-  <div className="left">
-    <span className="tag">What We Are</span>
-    <h2>
-      Not a Product. Not a Platform. <span className="orange">A Philosophy</span>
-    </h2>
-    <p>
-      Sample Project is the invisible architecture behind transformative brand-defining ideas, people, and systems that create meaningful impact across diverse industries...
-    </p>
-  </div>
-  <div className="right">
-    <img className="rightimg" src={img1} alt="Growth" />
-  </div>
-</section>
-
-
-      <div id="cta">
-        <button>Our Brands</button>
-      </div>
     </div>
   );
 }

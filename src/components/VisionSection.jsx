@@ -126,10 +126,17 @@ export default function VisionSection() {
         `}
       </style>
 
-      <section className="vision-section">
+      <section className="vision-section"   style={{
+          backgroundImage: `url(${gun})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          height: '470px', // you can change the height as per your need
+          width: '100%',
+        }}>
      <div
   className="vision-label"
-  style={{ zIndex: 2147483647 }}
+ 
 >
   The Vision
 </div>
@@ -139,7 +146,7 @@ export default function VisionSection() {
           {/* Left Image */}
           <div className="vision-image">
             {/* Uncomment if using local images */}
-            <img src={gun} alt="Telescope Illustration" className="w-full object-contain" />
+          
           </div>
 
           {/* Center Content */}

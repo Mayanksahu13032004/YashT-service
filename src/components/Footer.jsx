@@ -1,5 +1,5 @@
 import React from 'react';
-
+import img5 from '../assets/img5.jpg'
 export default function Footer() {
   return (
     <>
@@ -121,7 +121,14 @@ export default function Footer() {
         `}
       </style>
 
-      <footer className="footer">
+      <footer className="footer" style={{
+                backgroundImage: `url(${img5})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                height: '200px', // you can change the height as per your need
+                width: '100%',
+              }}>
         {/* Background grid pattern */}
         <div className="footer-bg" />
 

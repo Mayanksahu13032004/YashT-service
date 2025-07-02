@@ -14,22 +14,25 @@ body {
 
 /* App Container */
 #app {
-  min-height: 100vh;
+ 
   background-color: white;
 }
 
 
 /* NAVBAR */
 #navbar {
+  margin-left: 1%;
+  padding-left: 2%;
+  position: relative;
+  top:1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 10px 30px;
-  margin: 20px auto;
   border-radius: 12px;
-  width: 90%;
-  max-width: 1100px;
+  width: 88%;
+  height: 4rem;
+  
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -106,7 +109,6 @@ body {
 #hero {
   text-align: center;
   padding: 6rem 1rem;
-  background: linear-gradient(to right, #1e1b4b, #6b21a8);
   color: white;
   position: relative;
 }
