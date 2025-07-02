@@ -1,6 +1,7 @@
 import React from "react";
 
 import gun from "../assets/gun.jpg"
+import '../style/vision.css'
 
 export default function VisionSection() {
   return (
@@ -126,7 +127,7 @@ export default function VisionSection() {
         `}
       </style>
 
-      <section className="vision-section"   style={{
+      <section className="vision-section hello"   style={{
           backgroundImage: `url(${gun})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
