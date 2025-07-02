@@ -64,6 +64,7 @@ export default function VisionSection() {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 1rem;
+            color:black;
           }
 
           @media (min-width: 768px) {
@@ -75,6 +76,7 @@ export default function VisionSection() {
           .vision-text {
             color: #4b5563; /* gray-700 */
             margin-bottom: 0.75rem;
+            font-weight: bold;
           }
 
           .vision-divider {
@@ -142,10 +144,7 @@ export default function VisionSection() {
               In a world driven by urgency, we build with intention
             </p>
 
-            {/* Divider Line */}
-            <div className="vision-divider">
-              <div className="vision-divider-icon">✕</div>
-            </div>
+          
 
             {/* CTA Button */}
             <button className="vision-button">Learn More About Us</button>

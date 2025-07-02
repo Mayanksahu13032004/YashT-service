@@ -69,6 +69,7 @@ export default function PhilosophySection() {
             font-weight: bold;
             margin-bottom: 1rem;
             line-height: 1.4;
+            color:black;
           }
 
           @media (min-width: 768px) {
@@ -86,6 +87,7 @@ export default function PhilosophySection() {
             margin-bottom: 1rem;
             line-height: 1.75;
             font-size: 1rem;
+             font-weight: bold;
           }
 
           .italic-highlight {
@@ -116,7 +118,8 @@ export default function PhilosophySection() {
           <p className="paragraph">
             Every brand we build begins with a single question: <br />
             <span className="italic-highlight">
-              Does this make the world feel more alive?
+              Does this make the world
+               feel more alive?
             </span>
           </p>
         </div>
