@@ -1,40 +1,41 @@
-/* Base Styles */
+Base Styles
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #2b0b5d; /* deep purple background */
+  background-color: #2b0b5d;
   color: #fff;
 }
 
 /* App Container */
 #app {
- 
   background-color: white;
 }
 
-
 /* ✅ Navbar base styles */
 #navbar {
+  margin-top: 1%;
   width: 90%;
+  height: 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 4vh 4vw;
   background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5vw;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 2;
 }
 
 .brand {
-  font-size: 1.2rem;
+  font-size: 2vw;
   font-weight: 600;
   color: #333;
   display: flex;
@@ -43,16 +44,16 @@ body {
 
 .brand::before {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 2vw;
+  height: 2vw;
   background-color: #ff6600;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .nav-links {
   display: flex;
-  gap: 25px;
+  gap: 2.5vw;
 }
 
 .nav-links a {
@@ -68,7 +69,7 @@ body {
 
 .hamburger {
   display: none;
-  font-size: 1.8rem;
+  font-size: 4vw;
   cursor: pointer;
 }
 
@@ -78,14 +79,14 @@ body {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 1.5rem;
+    padding: 3vh 4vw;
   }
 
   .hamburger {
     display: block;
     position: absolute;
-    right: 1.5rem;
-    top: 1.2rem;
+    right: 4vw;
+    top: 3vh;
     z-index: 999;
     color: #333;
   }
@@ -95,10 +96,10 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: white;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2vh;
+    padding: 3vh 4vw;
+    border-radius: 2vw;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.open {
@@ -106,7 +107,7 @@ body {
   }
 
   .nav-links a {
-    padding: 0.75rem 1rem;
+    padding: 2vh 4vw;
     border-bottom: 1px solid #eee;
     width: 100%;
   }
@@ -116,47 +117,35 @@ body {
 .email-btn {
   background-color: #f97316;
   color: white;
-  padding: 0.6rem 0.9rem;
-  border-radius: 0.6rem;
-  /* position: relative; */
+  padding: 1.5vh 2vw;
+  border-radius: 1vw;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.imgside {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.hamburger {
-  display: none;
 }
 
 .email-btn:hover {
   background-color: #ea580c;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
+.imgside {
+  width: 5vw;
+  height: 5vw;
+  object-fit: contain;
 }
 
 /* HERO */
 #hero {
   text-align: center;
-  padding: 6rem 1rem;
+  padding: 10vh 5vw;
   color: white;
   position: relative;
 }
 
 #hero h1 {
-  font-size: 3rem;
+  font-size: 6vw;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 2vh;
 }
 
 #hero .highlight {
@@ -165,18 +154,19 @@ body {
 }
 
 #hero p {
-  max-width: 40rem;
-  margin: 0 auto 1.5rem;
+  max-width: 80vw;
+  margin: 0 auto 3vh;
   line-height: 1.6;
+  font-size: 1.8vw;
 }
 
 #hero button {
   background-color: white;
   color: #6b21a8;
-  padding: 0.6rem 1.5rem;
+  padding: 1.2vh 3vw;
   font-weight: 600;
-  border-radius: 30px;
-  border: 2px solid #e5e7eb;
+  border-radius: 10vw;
+  border: 0.3vh solid #e5e7eb;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -189,24 +179,24 @@ body {
 #info {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 4rem 2rem;
+  gap: 4vh;
+  padding: 8vh 4vw;
 }
 
 #info .tag {
   display: inline-block;
   background-color: #ef4444;
   color: white;
-  font-size: 0.875rem;
-  padding: 0.25rem 0.75rem;
+  font-size: 1.8vw;
+  padding: 1vh 2vw;
   border-radius: 9999px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1vh;
 }
 
 #info h2 {
-  font-size: 2rem;
+  font-size: 4vw;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 2vh;
 }
 
 #info .orange {
@@ -214,29 +204,29 @@ body {
 }
 
 #info p {
-  display: block;
   color: #4b5563;
   line-height: 1.6;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-bottom: 2vh;
+  font-size: 1.8vw;
 }
 
 #info img {
- display: block;
-
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* CTA */
 #cta {
   text-align: center;
-  margin: 2.5rem 0;
+  margin: 5vh 0;
 }
 
 #cta button {
   background-color: #6b21a8;
   color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
+  padding: 2vh 4vw;
+  border-radius: 10vw;
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -248,66 +238,23 @@ body {
 
 /* Image Styling */
 .rightimg {
-  height: 325px;
+  height: 40vh;
   display: block;
   margin: 0 auto;
 }
 
-/* Image in logo */
 .imgside {
-  height: 53px;
-  width: 72.3px;
-  margin-right: 0.5rem;
+  height: 7vh;
+  width: 9vw;
+  margin-right: 1vw;
 }
 
-/* -------------------------------
-   ✅ Media Query for < 769px
--------------------------------- */
-@media (max-width: 769px) {
-  #navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 1.5rem;
-    border-radius: 0;
-  }
-
-   .hamburger {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    background: white;
-    position: absolute;
-    top: 70px;
-    right: 30px;
-    padding: 15px;
-    border-radius: 10px;
-  }
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 0.75rem 1.5rem;
-    border-bottom: 1px solid #e5e7eb;
-    width: 100%;
-  }
-
-  .email-btn {
-    align-self: flex-end;
-    margin-top: 0.5rem;
-  }
-
+/* Responsive < 769px */
+@media (max-width: 768px) {
   #info {
     flex-direction: column;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 4vh 3vw;
   }
 
   #info .left, #info .right {
@@ -316,34 +263,27 @@ body {
 
   .rightimg {
     width: 80%;
-    max-width: 300px;
+    max-width: 80vw;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 2vh;
   }
 
   #info h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 5vw;
+    margin-bottom: 2vh;
   }
 
   #info p {
-    font-size: 1rem;
-    padding: 0 1rem;
+    font-size: 4vw;
+    padding: 0 3vw;
   }
 
   #hero h1 {
-    font-size: 2.2rem;
+    font-size: 7vw;
   }
 }
 
-#info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 4rem 2rem;
-}
-
-/* Make content side-by-side on wider screens */
+/* Info container side-by-side for large screens */
 @media (min-width: 768px) {
   #info {
     flex-direction: row;
@@ -361,9 +301,11 @@ body {
     justify-content: center;
   }
 }
+
+/* Hero Background Block */
 .hello {
   width: 100%;
-  height: 35rem;
+  height: 70vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -374,23 +316,76 @@ body {
   z-index: 0;
 }
 
-/* Responsive for mobile & tablet */
+/* Responsive background */
 @media (max-width: 768px) {
   .hello {
-    height: auto; /* allow content to define height */
-    max-height: 20rem;
+    height: auto;
+    max-height: 40vh;
     background-size: cover;
     background-position: top;
-    padding-bottom: 2rem;
+    padding-bottom: 4vh;
   }
 }
+
+
 @media (max-width: 412px) {
+
   .hello {
-    height: auto; /* allow content to define height */
-    max-height: 10rem;
+    width: 100%;
+    height: 40%;
     background-size: cover;
     background-position: top;
-    padding-bottom: 2rem;
+    padding-bottom: 4vh;
+  }
+  body {
+    font-size: 3.2vw; /* Or use 12px if needed */
+  }
+
+  #hero h1 {
+    font-size: 6.2vw;
+  }
+
+  .nav-links a {
+    font-size: 4vw;
+    padding: 2.5vw 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 2vw;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 70vw;
+    padding: 4vw;
+    border-radius: 10px;
+    max-height: 70vh;  /* 👈 limit max height */
+    overflow-y: auto;  /* 👈 scroll if items exceed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1101;
+  }
+
+  .nav-links a {
+    padding: 2vh 3vw;
+    font-size: 4vw;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    font-size: 6vw;
+  }
+
+  .email-btn {
+    font-size: 3.2vw;
+    padding: 2vh 3vw;
   }
 }
 
